@@ -1,0 +1,37 @@
+.contactCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+  border: 2px solid blue;
+  gap: 15px;
+
+  min-width: 480px;
+}
+
+.contactInfo {
+  display: block;
+}
+.btnDelete {
+  background-color: blue;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btnDelete:hover {
+  background-color: darkblue;
+  color: black;
+}
+
+.btnDelete svg {
+  margin-right: 5px;
+}
