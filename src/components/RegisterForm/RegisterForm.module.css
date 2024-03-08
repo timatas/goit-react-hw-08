@@ -1,9 +1,42 @@
 .form {
-  width: 320px;
-}
-
-.label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  max-width: 300px;
+  margin: 15px auto;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid blue;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  color: black;
 }
