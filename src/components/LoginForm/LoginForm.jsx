@@ -24,7 +24,7 @@ export const LoginForm = () => {
         toast.error("Login is error!");
       });
 
-    form.reset();
+    //form.reset();
   };
 
   return (

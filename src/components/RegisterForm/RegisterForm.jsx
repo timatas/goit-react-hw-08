@@ -34,7 +34,7 @@ export const RegisterForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    console.log(e.target.elements.email.value);
+
     dispatch(
       register({
         name: form.elements.name.value,
@@ -50,7 +50,7 @@ export const RegisterForm = () => {
         toast.error("Login is error!");
       });
 
-    form.reset();
+    //form.reset();
   };
 
   return (

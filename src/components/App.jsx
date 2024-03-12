@@ -36,6 +36,7 @@ import { PrivateRoute } from "./PrivateRoute";
 import { RestrictedRoute } from "./RestrictedRoute";
 import { refreshUser } from "../redux/auth/operations";
 import { useAuth } from "../hooks";
+import ErrorPage404 from "../pages/ErrorPage404";
 
 const HomePage = lazy(() => import("../pages/Home"));
 const RegisterPage = lazy(() => import("../pages/Register"));
@@ -82,6 +83,7 @@ export const App = () => {
             }
           />
         </Route>
+        <Route path="*" element={<ErrorPage404 />} />
       </Routes>
       <Toaster />
     </>
